@@ -22,7 +22,7 @@
 
 
   <nav class="navbar">
-    <!-- <div class="logo">Anu</div> -->
+    <div class="nav-initial">Anushka</div> 
     <ul class="nav-links">
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
@@ -103,7 +103,7 @@
       </div>
     </a>
 
-    <a href="https://github.com/anushka241105/SHARE_MARKET_PREDICTION"
+    <a href="https://github.com/anushka241105/share_market123"
        target="_blank"
        class="project-card">
 
@@ -136,7 +136,7 @@
     </a>
 
 
-    <a href="https://github.com/anushka241105/Pet-face-classifier"
+    <a href="https://github.com/anushka241105/landmark-detection"
        target="_blank"
        class="project-card">
 
@@ -153,19 +153,81 @@
     </a>
 
 
-    <a href="https://github.com/anushka241105/Pet-face-classifier"
-       target="_blank"
-       class="project-card">
+    <a class="project-card wip-project">
+  <div class="project-image">
+    <img src="https://i.pinimg.com/1200x/67/f2/af/67f2af1c75b0f1b7e1d540b0428ca629.jpg" alt="Project in progress">
+  </div>
 
-      <div class="project-image">
-        <img src="https://i.pinimg.com/1200x/67/f2/af/67f2af1c75b0f1b7e1d540b0428ca629.jpg" alt="Project preview">
+  <div class="project-content">
+    <h3>Loan Prediction</h3>
+    <p>A machine learning–based web app that predicts loan approval eligibility using applicant financial and personal details.
+       Designed to assist lenders in faster, data-driven decision-making.</p>
+  </div>
+</a>
+
+<a class="project-card wip-project">
+  <div class="project-image">
+    <img src="https://i.pinimg.com/736x/72/8d/6b/728d6bbf3160cdd44418d9bb011d257e.jpg" alt="Project in progress">
+  </div>
+
+  <div class="project-content">
+    <h3>Twitter Sentiment Analysis</h3>
+    <p>A web application that analyzes tweets in real time to determine public sentiment using NLP techniques. 
+      Useful for tracking opinions, trends, and brand perception.</p>
+  </div>
+</a>
+
+<a class="project-card wip-project">
+  <div class="project-image">
+    <img src="https://i.pinimg.com/1200x/89/ae/3e/89ae3e95a1246b5c5eb681d94884242d.jpg" alt="Project in progress">
+  </div>
+
+  <div class="project-content">
+    <h3>FinSakhi</h3>
+    <p>FinSakhi is a voice-assisted website that helps women in informal work
+Upload photos, track their daily earning, get feedback, build verified profile and download financial reports for loan approval
+</p>
+  </div>
+</a>
+
+  </div>
+</section>
+
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact-section">
+  <h2 class="contact-title">Let’s Connect</h2>
+
+  <p class="contact-subtitle">
+    Open to collaborations, learning opportunities, and meaningful conversations.
+  </p>
+
+  <div class="contact-cards">
+    
+    <!-- Email -->
+     <a href="anushka241105@gmail.com" class="contact-card"> 
+      <span class="contact-icon"></span>
+      <div>
+        <h4>Email</h4>
+        <p>anushka241105@gmail.com</p>
       </div>
+    </a>
 
-      <div class="">
-        <h3>Landmark Detection </h3>
-        <p>
-          To build a real-time facial landmark detection system that detects facial key points (eyes, nose, mouth, jawline, etc.) from an image or webcam feed using deep learning.
-        </p>
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/anushka-6069b72a5/" target="_blank" class="contact-card">
+      <span class="contact-icon"></span>
+      <div>
+        <h4>LinkedIn</h4>
+        <p>linkedin.com/in/anushka-6069b72a5/</p>
+      </div>
+    </a>
+
+    <!-- GitHub -->
+    <a href="https://github.com/anushka241105" target="_blank" class="contact-card">
+      <span class="contact-icon"></span>
+      <div>
+        <h4>GitHub</h4>
+        <p>github.com/anushka241105</p>
       </div>
     </a>
 
@@ -173,15 +235,29 @@
 </section>
 
 
-  <!-- CONTACT -->
-  <section id="contact" class="section">
-    <div class="content">
-      <h2>Contact</h2>
-      <p>Email: your-email@example.com</p>
-      <p>LinkedIn • GitHub</p>
-    </div>
-  </section>
-
   <script src="script.js"></script>
+
+<div id="toast" class="toast">
+   This project is currently in progress.
+</div>
+
+<script>
+  const toast = document.getElementById("toast");
+  const wipCards = document.querySelectorAll(".wip-project");
+
+  wipCards.forEach(card => {
+    card.addEventListener("click", () => {
+      toast.classList.add("show");
+
+      setTimeout(() => {
+        toast.classList.remove("show");
+      }, 2200);
+    });
+  });
+</script>
+
+
+
+
 </body>
 </html>
